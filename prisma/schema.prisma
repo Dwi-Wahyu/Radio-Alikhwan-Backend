@@ -13,6 +13,7 @@ model artikel {
   title       String
   content     String    @db.LongText
   createdAt   DateTime  @default(now())
+  tanggal     String?
   id_pengguna String?
   thumbnail   String?
   dislike     Int       @default(0)

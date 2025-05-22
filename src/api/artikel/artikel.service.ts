@@ -16,7 +16,7 @@ export class ArtikelService {
     thumbnail: Express.Multer.File,
   ) {
     try {
-      const { filename } = thumbnail;
+      const { filename, path } = thumbnail;
 
       createArtikelDto['thumbnail'] = filename;
 
